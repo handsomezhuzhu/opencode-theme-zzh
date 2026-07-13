@@ -7,6 +7,7 @@
 | [ubuntu](ubuntu/) | Ubuntu 橙、茄子红、暖灰 |
 | [fedora](fedora/) | Fedora 蓝系 |
 | [2077](2077/) | 赛博朋克霓虹 |
+| [china](china/) | 朱砂红、鎏金、青竹绿 |
 
 ---
 
@@ -22,6 +23,16 @@
 mkdir -p ~/.config/opencode/themes
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/themes/ubuntu.json \
   -o ~/.config/opencode/themes/ubuntu.json
+```
+
+#### 中国风 (China)
+
+朱砂红、鎏金、青竹绿、墨色、宣纸白，传统色彩与现代终端相结合。
+
+```bash
+mkdir -p ~/.config/opencode/themes
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/themes/china.json \
+  -o ~/.config/opencode/themes/china.json
 ```
 
 #### Fedora
@@ -111,6 +122,16 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
   -o ~/.config/opencode/themes/ubuntu.json
 ```
 
+#### China
+
+Traditional Chinese color palette: Zhu Sha red (朱砂), Liu Jin gold (鎏金), Qing Zhu green (青竹), Mo Se ink (墨色) with rice paper white background.
+
+```bash
+mkdir -p ~/.config/opencode/themes
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/themes/china.json \
+  -o ~/.config/opencode/themes/china.json
+```
+
 #### Fedora
 
 Fedora-inspired blue palette with carefully matched dark and light variants.
@@ -188,43 +209,21 @@ rm ~/.config/opencode/themes/2077.json
 
 ```
 opencode-theme-zzh/
-├── ubuntu/
-│   ├── themes/ubuntu.json
-│   ├── scripts/validate.mjs
-│   └── package.json
-├── fedora/
-│   ├── themes/fedora.json
-│   ├── scripts/validate.mjs
-│   └── package.json
-├── 2077/
-│   ├── themes/2077.json
-│   ├── scripts/validate.mjs
-│   └── package.json
+├── ubuntu/themes/ubuntu.json
+├── fedora/themes/fedora.json
+├── 2077/themes/2077.json
+├── china/themes/china.json
 ├── README.md
 ├── LICENSE
 └── .gitignore
 ```
 
-## Development
-
-Each theme folder includes a validation script:
-
-```bash
-cd ubuntu
-npm test
-
-cd fedora
-npm test
-
-cd 2077
-npm test
-```
-
 ## Credits
 
-- **Ubuntu** theme inspired by [Ubuntu colour palette](https://design.ubuntu.com/brand/colour-palette). Not affiliated with Canonical Ltd.
-- **Fedora** theme inspired by Fedora website and logo assets. Not affiliated with the Fedora Project or Red Hat.
-- **2077** theme inspired by the visual style of *Cyberpunk 2077*. Not affiliated with CD Projekt Red.
+- **Ubuntu** theme inspired by [Ubuntu colour palette](https://design.ubuntu.com/brand/colour-palette).
+- **Fedora** theme inspired by Fedora website and logo assets.
+- **2077** theme inspired by the visual style of *Cyberpunk 2077*.
+- **China** theme inspired by traditional Chinese painting, porcelain, and classical color names.
 
 ## License
 
