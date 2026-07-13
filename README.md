@@ -21,7 +21,7 @@
 
 ```bash
 mkdir -p ~/.config/opencode/themes
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/themes/ubuntu.json \
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/ubuntu.json \
   -o ~/.config/opencode/themes/ubuntu.json
 ```
 
@@ -31,7 +31,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 ```bash
 mkdir -p ~/.config/opencode/themes
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/themes/china.json \
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json \
   -o ~/.config/opencode/themes/china.json
 ```
 
@@ -41,7 +41,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 ```bash
 mkdir -p ~/.config/opencode/themes
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/themes/fedora.json \
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json \
   -o ~/.config/opencode/themes/fedora.json
 ```
 
@@ -51,7 +51,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 ```bash
 mkdir -p ~/.config/opencode/themes
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/themes/2077.json \
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json \
   -o ~/.config/opencode/themes/2077.json
 ```
 
@@ -63,30 +63,30 @@ OpenCode 主题从本地 JSON 文件加载，主题文件需要放到 OpenCode �
 
 ```bash
 mkdir -p ~/.config/opencode/themes
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/themes/ubuntu.json -o ~/.config/opencode/themes/ubuntu.json
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/themes/fedora.json -o ~/.config/opencode/themes/fedora.json
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/themes/2077.json -o ~/.config/opencode/themes/2077.json
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/themes/china.json -o ~/.config/opencode/themes/china.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/ubuntu.json -o ~/.config/opencode/themes/ubuntu.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json -o ~/.config/opencode/themes/fedora.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json -o ~/.config/opencode/themes/2077.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json -o ~/.config/opencode/themes/china.json
 ```
 
 Windows PowerShell:
 
 ```powershell
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.config\opencode\themes"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/themes/ubuntu.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\ubuntu.json"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/themes/fedora.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\fedora.json"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/themes/2077.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\2077.json"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/themes/china.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\china.json"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/ubuntu.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\ubuntu.json"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\fedora.json"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\2077.json"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\china.json"
 ```
 
 **仅当前项目使用：**
 
 ```bash
 mkdir -p .opencode/themes
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/themes/ubuntu.json -o .opencode/themes/ubuntu.json
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/themes/fedora.json -o .opencode/themes/fedora.json
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/themes/2077.json -o .opencode/themes/2077.json
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/themes/china.json -o .opencode/themes/china.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/ubuntu.json -o .opencode/themes/ubuntu.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json -o .opencode/themes/fedora.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json -o .opencode/themes/2077.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json -o .opencode/themes/china.json
 ```
 
 ### 激活主题
@@ -122,7 +122,7 @@ Ubuntu-inspired orange, aubergine, and warm grey palette with dark and light var
 
 ```bash
 mkdir -p ~/.config/opencode/themes
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/themes/ubuntu.json \
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/ubuntu.json \
   -o ~/.config/opencode/themes/ubuntu.json
 ```
 
@@ -132,7 +132,7 @@ Traditional Chinese color palette: Zhu Sha red (朱砂), Liu Jin gold (鎏金), 
 
 ```bash
 mkdir -p ~/.config/opencode/themes
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/themes/china.json \
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json \
   -o ~/.config/opencode/themes/china.json
 ```
 
@@ -142,7 +142,7 @@ Fedora-inspired blue palette with carefully matched dark and light variants.
 
 ```bash
 mkdir -p ~/.config/opencode/themes
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/themes/fedora.json \
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json \
   -o ~/.config/opencode/themes/fedora.json
 ```
 
@@ -152,7 +152,7 @@ Cyberpunk 2077 neon palette with high-contrast dark and light variants.
 
 ```bash
 mkdir -p ~/.config/opencode/themes
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/themes/2077.json \
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json \
   -o ~/.config/opencode/themes/2077.json
 ```
 
@@ -164,30 +164,30 @@ OpenCode loads themes from local JSON files. Theme files must be placed in the O
 
 ```bash
 mkdir -p ~/.config/opencode/themes
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/themes/ubuntu.json -o ~/.config/opencode/themes/ubuntu.json
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/themes/fedora.json -o ~/.config/opencode/themes/fedora.json
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/themes/2077.json -o ~/.config/opencode/themes/2077.json
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/themes/china.json -o ~/.config/opencode/themes/china.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/ubuntu.json -o ~/.config/opencode/themes/ubuntu.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json -o ~/.config/opencode/themes/fedora.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json -o ~/.config/opencode/themes/2077.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json -o ~/.config/opencode/themes/china.json
 ```
 
 Windows PowerShell:
 
 ```powershell
 New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.config\opencode\themes"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/themes/ubuntu.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\ubuntu.json"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/themes/fedora.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\fedora.json"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/themes/2077.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\2077.json"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/themes/china.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\china.json"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/ubuntu.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\ubuntu.json"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\fedora.json"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\2077.json"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\china.json"
 ```
 
 **Project-only install:**
 
 ```bash
 mkdir -p .opencode/themes
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/themes/ubuntu.json -o .opencode/themes/ubuntu.json
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/themes/fedora.json -o .opencode/themes/fedora.json
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/themes/2077.json -o .opencode/themes/2077.json
-curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/themes/china.json -o .opencode/themes/china.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/ubuntu.json -o .opencode/themes/ubuntu.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json -o .opencode/themes/fedora.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json -o .opencode/themes/2077.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json -o .opencode/themes/china.json
 ```
 
 ### Activate the theme
@@ -217,10 +217,18 @@ rm ~/.config/opencode/themes/china.json
 
 ```
 opencode-theme-zzh/
-├── ubuntu/themes/ubuntu.json
-├── fedora/themes/fedora.json
-├── 2077/themes/2077.json
-├── china/themes/china.json
+├── ubuntu/
+│   ├── ubuntu.json
+│   └── README.md
+├── fedora/
+│   ├── fedora.json
+│   └── README.md
+├── 2077/
+│   ├── 2077.json
+│   └── README.md
+├── china/
+│   ├── china.json
+│   └── README.md
 ├── README.md
 ├── LICENSE
 └── .gitignore
