@@ -1,0 +1,14 @@
+{
+  "name": "opencode-theme-fedora",
+  "version": "0.1.0",
+  "description": "A Fedora-inspired dark and light theme for OpenCode.",
+  "type": "module",
+  "private": true,
+  "files": ["themes"],
+  "scripts": {
+    "test": "node scripts/validate.mjs"
+  },
+  "oc-themes": ["themes/fedora.json"],
+  "keywords": ["opencode", "opencode-theme", "tui-theme", "fedora", "linux"],
+  "license": "MIT"
+}

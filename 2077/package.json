@@ -1,0 +1,14 @@
+{
+  "name": "opencode-theme-2077",
+  "version": "0.1.0",
+  "description": "A Cyberpunk 2077-inspired dark and light theme for OpenCode.",
+  "type": "module",
+  "private": true,
+  "files": ["themes"],
+  "scripts": {
+    "test": "node scripts/validate.mjs"
+  },
+  "oc-themes": ["themes/2077.json"],
+  "keywords": ["opencode", "opencode-theme", "tui-theme", "cyberpunk", "2077"],
+  "license": "MIT"
+}
