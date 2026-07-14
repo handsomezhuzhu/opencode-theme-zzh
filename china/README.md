@@ -1,6 +1,6 @@
 # China 故宫红金 Theme
 
-以故宫宫墙朱红、琉璃瓦金黄和暖象牙白为核心的 OpenCode TUI 主题。
+以中性背景承载故宫宫墙朱红、琉璃瓦金黄和暖象牙白点缀的 OpenCode TUI 主题。
 
 ## Design Inspiration 设计方案
 
@@ -10,23 +10,23 @@
 - Vermilion `#C23531`：标准朱红锚点
 - Imperial Gold `#F2C14E`：深色模式主色、标题、函数和活跃边框
 - Glazed Gold `#FFD166`：模拟阳光下的黄色琉璃瓦
-- Dark Wall `#1C090B` / `#350D12` / `#54151B`：由暗到亮的宫墙红层级
-- Warm Ivory `#F8E8D0` / `#FBF3E6`：汉白玉、宣纸和暖色日光
+- Warm charcoal `#171513` / `#211E1B` / `#2C2723`：不抢主题色的暖黑背景
+- Warm Ivory `#F4E9D7` / `#FBF7F0`：汉白玉、宣纸和暖色日光
 - Jade Green、Glazed Blue：只作为少量成功与信息色，不抢红金主体
 
-深色模式是夜色中的红墙金瓦，背景本身就是红色主题；浅色模式则以暖象牙底配故宫红正文和暗金强调。
+宫墙红与琉璃金只用于标题、关键字、函数、焦点和边框点缀；背景保持暖黑或象牙白，避免大面积红色带来的压迫感。
 
 ## Color Scheme 配色方案
 
 | 角色 | 深色模式 | 浅色模式 |
 | --- | --- | --- |
-| Background | `#1C090B` | `#FBF3E6` |
-| Panel | `#350D12` | `#F5E5CF` |
-| Element | `#54151B` | `#EBD4B5` |
+| Background | `#171513` | `#FBF7F0` |
+| Panel | `#211E1B` | `#F4EDE2` |
+| Element | `#2C2723` | `#EAE0D2` |
 | Primary | `#F2C14E` | `#9D2933` |
 | Secondary | `#FF8A80` | `#7A5200` |
 | Accent | `#FFD166` | `#A3362F` |
-| Text | `#F8E8D0` | `#2A1715` |
+| Text | `#F4E9D7` | `#2A1715` |
 
 ## Install
 

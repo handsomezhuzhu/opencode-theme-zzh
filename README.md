@@ -1,6 +1,6 @@
 # OpenCode Theme
 
-[OpenCode](https://opencode.ai/) TUI 主题合集。每个文件夹一个主题，支持深色和浅色模式。
+[OpenCode](https://opencode.ai/) TUI 主题合集。每个文件夹一个主题，支持深色和浅色模式。除强调霓虹氛围的 2077 外，主题均使用中性背景，让品牌色只承担点缀与交互角色。
 
 | 主题 | 风格 |
 | --- | --- |

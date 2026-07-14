@@ -17,19 +17,19 @@ V2 引入 Fedora 官方 Four Foundations 配色，替代原先偏通用的粉彩
 - Features Orange `#E59728`
 - First Green `#79DB32`
 
-深色语法高亮使用这些官方颜色的发布浅色变体，例如 `#CFBDDD`、`#ED97BB`、`#F2CA92` 和 `#BBED97`，既保留 Fedora 身份，又能在深蓝面板上满足正文对比度。
+背景采用 Fedora 官方深灰附近的中性蓝灰，而不是大面积高饱和蓝；品牌蓝和 Four Foundations 色只用于交互、标题和语法高亮。
 
 ## Color Scheme 配色方案
 
 | 角色 | 深色模式 | 浅色模式 |
 | --- | --- | --- |
-| Background | `#07111C` | `#FFFFFF` |
-| Panel | `#0D1B2A` | `#F4F8FB` |
-| Element | `#14263A` | `#E8EFF8` |
+| Background | `#1D252E` | `#FFFFFF` |
+| Panel | `#252D36` | `#F7F7F7` |
+| Element | `#303943` | `#ECECEC` |
 | Primary | `#51A2DA` | `#294172` |
 | Secondary | `#CFBDDD` | `#7048A8` |
 | Text | `#E8EFF8` | `#1D252E` |
-| Muted text | `#8FAED9` | `#4C4C4C` |
+| Muted text | `#A8B0B7` | `#4C4C4C` |
 
 ## Install
 
