@@ -7,6 +7,7 @@
 | [ubuntu](ubuntu/) | Ubuntu 橙、茄子红、暖灰 |
 | [fedora](fedora/) | Fedora 蓝与 Four Foundations 官方色 |
 | [2077](2077/) | 品牌黄、霓虹青、危险粉 |
+| [transparent-2077](transparent-2077/) | 2077 霓虹配色 + 透明背景 |
 | [china](china/) | 故宫红、琉璃金、暖象牙 |
 | [claude-code](claude-code/) | Anthropic 陶土橙、暖黑、米白 |
 | [wechat](wechat/) | WeUI 官方暗色、微信绿 |
@@ -67,6 +68,16 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
   -o ~/.config/opencode/themes/2077.json
 ```
 
+#### 透明 2077 (Transparent 2077)
+
+在 2077 霓虹配色基础上将背景设为透明，让宿主终端背景透出，配色与 2077 完全一致。透明效果需宿主终端支持。
+
+```bash
+mkdir -p ~/.config/opencode/themes
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/transparent-2077/transparent-2077.json \
+  -o ~/.config/opencode/themes/transparent-2077.json
+```
+
 #### WeChat Dark
 
 基于腾讯 WeUI 官方暗色令牌的固定暗色主题，使用 `#111111` 背景与 `#07C160` 微信绿。
@@ -88,6 +99,7 @@ mkdir -p ~/.config/opencode/themes
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/ubuntu.json -o ~/.config/opencode/themes/ubuntu.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json -o ~/.config/opencode/themes/fedora.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json -o ~/.config/opencode/themes/2077.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/transparent-2077/transparent-2077.json -o ~/.config/opencode/themes/transparent-2077.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json -o ~/.config/opencode/themes/china.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/claude-code/claude-code.json -o ~/.config/opencode/themes/claude-code.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/wechat/wechat.json -o ~/.config/opencode/themes/wechat.json
@@ -100,6 +112,7 @@ New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.config\opencode\the
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/ubuntu.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\ubuntu.json"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\fedora.json"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\2077.json"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/transparent-2077/transparent-2077.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\transparent-2077.json"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\china.json"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/claude-code/claude-code.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\claude-code.json"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/wechat/wechat.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\wechat.json"
@@ -112,6 +125,7 @@ mkdir -p .opencode/themes
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/ubuntu.json -o .opencode/themes/ubuntu.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json -o .opencode/themes/fedora.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json -o .opencode/themes/2077.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/transparent-2077/transparent-2077.json -o .opencode/themes/transparent-2077.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json -o .opencode/themes/china.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/claude-code/claude-code.json -o .opencode/themes/claude-code.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/wechat/wechat.json -o .opencode/themes/wechat.json
@@ -119,7 +133,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 ### 激活主题
 
-**方式一：** 在 `tui.json` 中设置主题名（`ubuntu`、`fedora`、`2077`、`china`、`claude-code` 或 `wechat`）：
+**方式一：** 在 `tui.json` 中设置主题名（`ubuntu`、`fedora`、`2077`、`transparent-2077`、`china`、`claude-code` 或 `wechat`）：
 
 ```json
 { "theme": "ubuntu" }
@@ -135,6 +149,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 rm ~/.config/opencode/themes/ubuntu.json
 rm ~/.config/opencode/themes/fedora.json
 rm ~/.config/opencode/themes/2077.json
+rm ~/.config/opencode/themes/transparent-2077.json
 rm ~/.config/opencode/themes/china.json
 rm ~/.config/opencode/themes/claude-code.json
 rm ~/.config/opencode/themes/wechat.json
@@ -196,6 +211,16 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
   -o ~/.config/opencode/themes/2077.json
 ```
 
+#### Transparent 2077
+
+Transparent-background variant of the 2077 neon palette. Backgrounds are set to `transparent` so the host terminal shows through; all colors match 2077. Requires a terminal that supports transparency.
+
+```bash
+mkdir -p ~/.config/opencode/themes
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/transparent-2077/transparent-2077.json \
+  -o ~/.config/opencode/themes/transparent-2077.json
+```
+
 #### WeChat Dark
 
 Fixed dark theme based on Tencent WeUI's official dark tokens: `#111111` surfaces and WeChat Green `#07C160`.
@@ -217,6 +242,7 @@ mkdir -p ~/.config/opencode/themes
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/ubuntu.json -o ~/.config/opencode/themes/ubuntu.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json -o ~/.config/opencode/themes/fedora.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json -o ~/.config/opencode/themes/2077.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/transparent-2077/transparent-2077.json -o ~/.config/opencode/themes/transparent-2077.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json -o ~/.config/opencode/themes/china.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/claude-code/claude-code.json -o ~/.config/opencode/themes/claude-code.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/wechat/wechat.json -o ~/.config/opencode/themes/wechat.json
@@ -229,6 +255,7 @@ New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.config\opencode\the
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/ubuntu.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\ubuntu.json"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\fedora.json"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\2077.json"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/transparent-2077/transparent-2077.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\transparent-2077.json"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\china.json"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/claude-code/claude-code.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\claude-code.json"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/wechat/wechat.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\wechat.json"
@@ -241,6 +268,7 @@ mkdir -p .opencode/themes
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/ubuntu/ubuntu.json -o .opencode/themes/ubuntu.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json -o .opencode/themes/fedora.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json -o .opencode/themes/2077.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/transparent-2077/transparent-2077.json -o .opencode/themes/transparent-2077.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json -o .opencode/themes/china.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/claude-code/claude-code.json -o .opencode/themes/claude-code.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/wechat/wechat.json -o .opencode/themes/wechat.json
@@ -248,7 +276,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 ### Activate the theme
 
-**Option A:** Set the theme name in `tui.json` (`ubuntu`, `fedora`, `2077`, `china`, `claude-code`, or `wechat`):
+**Option A:** Set the theme name in `tui.json` (`ubuntu`, `fedora`, `2077`, `transparent-2077`, `china`, `claude-code`, or `wechat`):
 
 ```json
 { "theme": "ubuntu" }
@@ -264,6 +292,7 @@ Remove the theme files:
 rm ~/.config/opencode/themes/ubuntu.json
 rm ~/.config/opencode/themes/fedora.json
 rm ~/.config/opencode/themes/2077.json
+rm ~/.config/opencode/themes/transparent-2077.json
 rm ~/.config/opencode/themes/china.json
 rm ~/.config/opencode/themes/claude-code.json
 rm ~/.config/opencode/themes/wechat.json
@@ -284,6 +313,9 @@ opencode-theme-zzh/
 ├── 2077/
 │   ├── 2077.json
 │   └── README.md
+├── transparent-2077/
+│   ├── transparent-2077.json
+│   └── README.md
 ├── china/
 │   ├── china.json
 │   └── README.md
@@ -303,6 +335,7 @@ opencode-theme-zzh/
 - **Ubuntu** theme inspired by [Ubuntu colour palette](https://design.ubuntu.com/brand/colour-palette).
 - **Fedora** theme based on the Fedora Project Brand Book and official color variants.
 - **2077** theme inspired by Cyberpunk 2077 branding and neon HUD visuals.
+- **Transparent 2077** theme based on 2077 colors with transparent backgrounds, referencing [hongyue0721/opencode_transparent_theme](https://github.com/hongyue0721/opencode_transparent_theme).
 - **China** theme inspired by the Forbidden City's vermilion walls and yellow glazed roofs.
 - **Claude Code** theme based on Anthropic's official web brand swatches.
 - **WeChat Dark** theme based on Tencent WeUI official dark tokens.
