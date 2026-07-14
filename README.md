@@ -28,7 +28,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 #### 中国风 (China)
 
-朱砂红、鎏金、青竹绿、墨色、宣纸白，传统色彩与现代终端相结合。
+依据 GB/T 31430-2015 与故宫矿物颜料研究，以石青、石绿、明黄和米白构成青绿山水配色。
 
 ```bash
 mkdir -p ~/.config/opencode/themes
@@ -48,7 +48,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 #### Fedora
 
-基于 Fedora 当前蓝色调的配色，包含深色和浅色两种模式。
+基于 Fedora 官方蓝色与 Four Foundations 紫、粉、橙、绿色板，包含深色和浅色模式。
 
 ```bash
 mkdir -p ~/.config/opencode/themes
@@ -58,7 +58,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 #### 2077
 
-赛博朋克 2077 风格霓虹配色，高对比深色和浅色模式。
+依据 CD PROJEKT RED UI Art Bible，以军用红、冷青和品牌黄构成高对比深浅色模式。
 
 ```bash
 mkdir -p ~/.config/opencode/themes
@@ -143,7 +143,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 #### China
 
-Traditional Chinese color palette: Zhu Sha red (朱砂), Liu Jin gold (鎏金), Qing Zhu green (青竹), Mo Se ink (墨色) with rice paper white background.
+Blue-green landscape palette based on GB/T 31430-2015 and Palace Museum pigment research, centered on stone blue, stone green, bright yellow, and rice beige.
 
 ```bash
 mkdir -p ~/.config/opencode/themes
@@ -163,7 +163,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 #### Fedora
 
-Fedora-inspired blue palette with carefully matched dark and light variants.
+Fedora palette combining the official blues with the Four Foundations purple, magenta, orange, and green.
 
 ```bash
 mkdir -p ~/.config/opencode/themes
@@ -173,7 +173,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 #### 2077
 
-Cyberpunk 2077 neon palette with high-contrast dark and light variants.
+High-contrast palette based on the CD PROJEKT RED UI Art Bible: military red, cool cyan, and restrained brand yellow.
 
 ```bash
 mkdir -p ~/.config/opencode/themes
@@ -269,9 +269,9 @@ opencode-theme-zzh/
 ## Credits
 
 - **Ubuntu** theme inspired by [Ubuntu colour palette](https://design.ubuntu.com/brand/colour-palette).
-- **Fedora** theme inspired by Fedora website and logo assets.
-- **2077** theme inspired by the visual style of *Cyberpunk 2077*.
-- **China** theme inspired by traditional Chinese painting, porcelain, and classical color names.
+- **Fedora** theme based on the Fedora Project Brand Book and official color variants.
+- **2077** theme based on CD PROJEKT RED UI Art Bible colors.
+- **China** theme based on GB/T 31430-2015 and Palace Museum pigment research.
 - **Claude Code** theme based on Anthropic's official web brand swatches.
 
 ## License
