@@ -1,19 +1,18 @@
 # Ubuntu Theme
 
-基于 Canonical 官方 Ubuntu 品牌色板的 OpenCode TUI 主题，提供深色与浅色模式。
+突出 Ubuntu 官方橙与 Aubergine 茄子色的 OpenCode TUI 主题。
 
 ## Design Inspiration 设计方案
 
-主题直接采用 Ubuntu 官方 Orange、Aubergine 与 Warm Grey 色阶，而不是重新调制一套近似色：
+这套主题不追求把品牌橙调整成普通的高对比文本色，而是让 Ubuntu 的视觉身份直接出现在界面中：
 
-- Ubuntu Orange `#E95420`：品牌识别与活跃边框
+- Ubuntu Orange `#E95420`：主色、标题、函数、列表标记和焦点边框
 - Dark Aubergine `#2C001E`：深色背景
-- Dark Aubergine 90%/80% tint：`#411934`、`#56334B`，形成面板层级
-- Orange 50% tint `#F4AA90`：深色模式的正文级强调色
-- Warm Grey 10% tint `#F6F6F5`：深色正文与浅色面板
-- Cool Grey `#333333`：浅色正文
+- Aubergine tint `#411934` / `#56334B`：面板和控件层级
+- Light Aubergine `#77216F`、Mid Aubergine `#5E2750`：副色与浅色模式强调
+- Warm Grey `#F6F6F5` / `#EEEDEB`：浅色界面与深色正文
 
-精确品牌橙在部分茄子色面板上不适合作为小字号文字，因此标题与函数使用官方浅橙色阶，品牌橙保留给焦点与装饰角色。
+深色模式采用经典 Ubuntu 登录界面的“橙色灯光照在茄子色背景上”的感觉；浅色模式则保留白底、暖灰和醒目的官方橙。
 
 ## Color Scheme 配色方案
 
@@ -22,8 +21,8 @@
 | Background | `#2C001E` | `#FFFFFF` |
 | Panel | `#411934` | `#F6F6F5` |
 | Element | `#56334B` | `#EEEDEB` |
-| Primary | `#F4AA90` | `#B33608` |
-| Active border | `#EB6536` | `#E95420` |
+| Primary | `#E95420` | `#E95420` |
+| Secondary | `#CFB1CC` | `#5E2750` |
 | Text | `#F6F6F5` | `#333333` |
 
 ## Install
@@ -44,11 +43,9 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencod
 
 在 OpenCode 中输入 `/theme` 并选择 `ubuntu`。
 
-## Sources
+## Source
 
 - [Ubuntu official colour palette](https://design.ubuntu.com/brand/colour-palette)
-- [Ubuntu accessibility guidance](https://design.ubuntu.com/accessibility/)
-- [Canonical Vanilla color settings](https://vanillaframework.io/docs/settings/color-settings)
 
 ## License
 

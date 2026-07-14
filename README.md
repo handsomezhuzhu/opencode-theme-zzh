@@ -6,8 +6,8 @@
 | --- | --- |
 | [ubuntu](ubuntu/) | Ubuntu 橙、茄子红、暖灰 |
 | [fedora](fedora/) | Fedora 蓝与 Four Foundations 官方色 |
-| [2077](2077/) | 军用红、冷青、品牌黄 |
-| [china](china/) | 石青、石绿、明黄、米白 |
+| [2077](2077/) | 品牌黄、霓虹青、危险粉 |
+| [china](china/) | 故宫红、琉璃金、暖象牙 |
 | [claude-code](claude-code/) | Anthropic 陶土橙、暖黑、米白 |
 
 ---
@@ -28,7 +28,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 #### 中国风 (China)
 
-依据 GB/T 31430-2015 与故宫矿物颜料研究，以石青、石绿、明黄和米白构成青绿山水配色。
+以故宫宫墙朱红、黄色琉璃瓦和暖象牙白构成红金主题。
 
 ```bash
 mkdir -p ~/.config/opencode/themes
@@ -58,7 +58,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 #### 2077
 
-依据 CD PROJEKT RED UI Art Bible，以军用红、冷青和品牌黄构成高对比深浅色模式。
+以 Cyberpunk 2077 品牌黄、霓虹青和危险粉构成高饱和深浅色模式。
 
 ```bash
 mkdir -p ~/.config/opencode/themes
@@ -143,7 +143,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 #### China
 
-Blue-green landscape palette based on GB/T 31430-2015 and Palace Museum pigment research, centered on stone blue, stone green, bright yellow, and rice beige.
+Forbidden City-inspired red-and-gold palette based on vermilion walls, yellow glazed tiles, and warm ivory stone.
 
 ```bash
 mkdir -p ~/.config/opencode/themes
@@ -173,7 +173,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 
 #### 2077
 
-High-contrast palette based on the CD PROJEKT RED UI Art Bible: military red, cool cyan, and restrained brand yellow.
+High-saturation Cyberpunk 2077 palette centered on brand yellow, neon cyan, and danger pink.
 
 ```bash
 mkdir -p ~/.config/opencode/themes
@@ -270,8 +270,8 @@ opencode-theme-zzh/
 
 - **Ubuntu** theme inspired by [Ubuntu colour palette](https://design.ubuntu.com/brand/colour-palette).
 - **Fedora** theme based on the Fedora Project Brand Book and official color variants.
-- **2077** theme based on CD PROJEKT RED UI Art Bible colors.
-- **China** theme based on GB/T 31430-2015 and Palace Museum pigment research.
+- **2077** theme inspired by Cyberpunk 2077 branding and neon HUD visuals.
+- **China** theme inspired by the Forbidden City's vermilion walls and yellow glazed roofs.
 - **Claude Code** theme based on Anthropic's official web brand swatches.
 
 ## License
