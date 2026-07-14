@@ -1,28 +1,30 @@
 # Ubuntu Theme
 
-Ubuntu 官方色彩体系主题，适配 OpenCode TUI，提供深色与浅色两种模式。
+基于 Canonical 官方 Ubuntu 品牌色板的 OpenCode TUI 主题，提供深色与浅色模式。
 
-## Design Inspiration 设计灵感
+## Design Inspiration 设计方案
 
-源自 [Ubuntu Brand Colour Palette](https://design.ubuntu.com/brand/colour-palette)，以 Canonical 官方品牌色为核心：
+主题直接采用 Ubuntu 官方 Orange、Aubergine 与 Warm Grey 色阶，而不是重新调制一套近似色：
 
-- **Ubuntu Orange `#E95420`** — 标志性橙，用于 accent、高亮边框、标题
-- **Aubergine 茄子色系** — 从深紫 `#2C001E` 到中紫 `#5E2750` 的层次递进，构成深色面板的背景层次
-- **Warm Grey `#AEA79F`** — 暖灰用于柔和的 muted 文本与分隔线
+- Ubuntu Orange `#E95420`：品牌识别与活跃边框
+- Dark Aubergine `#2C001E`：深色背景
+- Dark Aubergine 90%/80% tint：`#411934`、`#56334B`，形成面板层级
+- Orange 50% tint `#F4AA90`：深色模式的正文级强调色
+- Warm Grey 10% tint `#F6F6F5`：深色正文与浅色面板
+- Cool Grey `#333333`：浅色正文
 
-整体风格偏向 2010 年代 Ubuntu 登录界面的"暖色调暗室"感觉，而非现代 GNOME 的冷灰。
+精确品牌橙在部分茄子色面板上不适合作为小字号文字，因此标题与函数使用官方浅橙色阶，品牌橙保留给焦点与装饰角色。
 
 ## Color Scheme 配色方案
 
 | 角色 | 深色模式 | 浅色模式 |
-|------|----------|----------|
-| **背景 / background** | Aubergine `#2C001E` | 纯白 `#FFFFFF` |
-| **面板 / backgroundPanel** | `#411934` | 暖白纸 `#F6F6F5` |
-| **元素 / backgroundElement** | `#56334B` | 浅暖灰 `#EEEDEB` |
-| **主色 / primary** | 柔和橙 `#F4AA90` | 深橙 `#B33608` |
-| **强调 / accent** | 青 `#72D1C8` | 浅茄子红 `#77216F` |
-| **正文 / text** | 暖白 `#F6F6F5` | 冷灰 `#333333` |
-| **代码 / syntax** | 紫、橙、青、绿的柔和色 | 对应的深色版 |
+| --- | --- | --- |
+| Background | `#2C001E` | `#FFFFFF` |
+| Panel | `#411934` | `#F6F6F5` |
+| Element | `#56334B` | `#EEEDEB` |
+| Primary | `#F4AA90` | `#B33608` |
+| Active border | `#EB6536` | `#E95420` |
+| Text | `#F6F6F5` | `#333333` |
 
 ## Install
 
@@ -40,13 +42,13 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencod
   -OutFile "$env:USERPROFILE\.config\opencode\themes\ubuntu.json"
 ```
 
-在 `tui.json` 中启用：
+在 OpenCode 中输入 `/theme` 并选择 `ubuntu`。
 
-```json
-{ "theme": "ubuntu" }
-```
+## Sources
 
-或在 OpenCode 中输入 `/theme` 选择 `ubuntu`。
+- [Ubuntu official colour palette](https://design.ubuntu.com/brand/colour-palette)
+- [Ubuntu accessibility guidance](https://design.ubuntu.com/accessibility/)
+- [Canonical Vanilla color settings](https://vanillaframework.io/docs/settings/color-settings)
 
 ## License
 

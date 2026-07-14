@@ -1,30 +1,35 @@
 # Fedora Theme
 
-Fedora 品牌蓝色调主题，适配 OpenCode TUI，提供深色与浅色两种模式。
+基于 Fedora Project 官方品牌色与 Four Foundations 辅助色的 OpenCode TUI 主题。
 
-## Design Inspiration 设计灵感
+## Design Inspiration 设计方案
 
-灵感取自 [Fedora Project](https://getfedora.org/) 的视觉形象，以 Fedora 蓝系为核心：
+主题以三种官方 Fedora 蓝为骨架：
 
-- **Fedora Blue `#3C6EB4`** — 品牌正蓝，用于边框和中强强调
-- **Fedora New Blue `#51A2DA`** — 较明亮的浅蓝，用于高亮、活跃元素
-- **Fedora Dark Blue `#294172`** — 深蓝作为 secondary 的基调
+- New Fedora Blue `#51A2DA`
+- Fedora Blue `#3C6EB4`
+- Dark Fedora Blue `#294172`
 
-深色模式采用极深海蓝 `#07111C` 为底，比纯黑更有呼吸感；浅色模式以蓝白为主，清爽干净。
+V2 引入 Fedora 官方 Four Foundations 配色，替代原先偏通用的粉彩辅助色：
 
-语法高亮部分额外引入紫、粉、金、青等辅助色，在保持蓝色调统一的前提下，让长时间阅读代码时仍有良好的色彩区分。
+- Freedom Purple `#A07CBC`
+- Friends Magenta `#DB3279`
+- Features Orange `#E59728`
+- First Green `#79DB32`
+
+深色语法高亮使用这些官方颜色的发布浅色变体，例如 `#CFBDDD`、`#ED97BB`、`#F2CA92` 和 `#BBED97`，既保留 Fedora 身份，又能在深蓝面板上满足正文对比度。
 
 ## Color Scheme 配色方案
 
 | 角色 | 深色模式 | 浅色模式 |
-|------|----------|----------|
-| **背景 / background** | 深海蓝 `#07111C` | 纯白 `#FFFFFF` |
-| **面板 / backgroundPanel** | `#0D1B2A` | 浅蓝白 `#F4F8FB` |
-| **元素 / backgroundElement** | `#14263A` | 淡蓝 `#E8F1F7` |
-| **主色 / primary** | Fedora New Blue `#51A2DA` | 深蓝 `#35639F` |
-| **边框 / border** | Fedora Blue `#3C6EB4` | `#7895AA` |
-| **正文 / text** | 浅蓝白 `#EAF4FB` | 深蓝灰 `#182A3A` |
-| **accent / 强调** | 天蓝 `#8DD7F7` | 亮蓝 `#0071B9` |
+| --- | --- | --- |
+| Background | `#07111C` | `#FFFFFF` |
+| Panel | `#0D1B2A` | `#F4F8FB` |
+| Element | `#14263A` | `#E8EFF8` |
+| Primary | `#51A2DA` | `#294172` |
+| Secondary | `#CFBDDD` | `#7048A8` |
+| Text | `#E8EFF8` | `#1D252E` |
+| Muted text | `#8FAED9` | `#4C4C4C` |
 
 ## Install
 
@@ -42,13 +47,13 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencod
   -OutFile "$env:USERPROFILE\.config\opencode\themes\fedora.json"
 ```
 
-在 `tui.json` 中启用：
+在 OpenCode 中输入 `/theme` 并选择 `fedora`。
 
-```json
-{ "theme": "fedora" }
-```
+## Sources
 
-或在 OpenCode 中输入 `/theme` 选择 `fedora`。
+- [Fedora Brand Guidelines](https://docs.fedoraproject.org/en-US/project/brand/)
+- [Fedora Brand Book source](https://gitlab.com/fedora/design/team/logos/fedora-brand-book-website/-/blob/main/fedora-brand-book-webpage.adoc)
+- [Fedora official color variants](https://gitlab.com/fedora/design/team/logos/fedora-brand-book-website/-/raw/main/images/different-variants.png)
 
 ## License
 

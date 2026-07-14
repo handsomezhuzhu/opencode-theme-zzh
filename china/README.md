@@ -1,35 +1,36 @@
 # China 中国风 Theme
 
-中国传统色主题，以朱砂、鎏金、青竹、墨色为核心，深色和浅色双模式，适配 OpenCode TUI。
+以中国国家标准传统色色名、故宫矿物颜料研究和青绿山水为依据的 OpenCode TUI 主题。
 
-## Design Inspiration 设计灵感
+## Design Inspiration 设计方案
 
-色彩名称与来源均取自中国传统色体系（参考《中国传统色》等资料）：
+V2 以现行国家标准 `GB/T 31430-2015 中国传统色色名及色度特性` 为色彩锚点，并参考故宫博物院对石青、石绿、朱砂和《千里江山图》的研究。
 
-- **朱砂 (Zhū Shā) `#C23531`** — 朱砂红，矿物颜料，常见于印泥、宫殿大门、春联。用作 primary 之一，代表喜庆与权威。
-- **鎏金 (Liú Jīn) `#D4A537`** — 鎏金工艺的黄金色，用于佛像与装饰边框。作为 primary（暗色）与 borderActive，在深色模式中有"镀金"质感。
-- **青竹 (Qīng Zhú) `#5B8C5A`** — 竹子的青绿色，代表生机与雅致。用于代码字符串、成功状态。
-- **靛青 (Diàn Qīng) `#2F4554`** — 靛蓝染色后的深青色，作为 secondary 提供沉稳的东方感。
-- **墨色 (Mò Sè) `#1A1A2E`** — 浓墨的深蓝黑，作为深色模式背景，比纯黑更有宣纸渗墨的韵味。
-- **宣纸 (Xuān Zhǐ) `#F4EDE4`** — 宣纸米白色，作为深色模式下的文本色与浅色模式的底色，模拟古籍翻页质感。
-- **黛紫 (Dài Zǐ) `#7C3A8C`** — 古代仕女画常用的暗紫色，用于语法关键字（syntaxKeyword），增添文人气。
-- **翡翠绿 (Fěi Cuì Lǜ) `#5F9EA0`** — 近似翡翠的青绿色，作为 accent，在深色模式下尤其温润。
+标准发布的是 D65 条件下的色度坐标，不直接提供 HEX。下列数值是用于屏幕显示的 sRGB 近似值，不声称是唯一的“历史真实色”：
+
+- 朱 `#C03530`
+- 明黄 `#F9BA2C`
+- 杏黄 `#FF954B`
+- 石青 `#63BBC8`
+- 石绿 `#74BC9C`
+- 紫 `#605D9D`
+- 藏蓝 `#1C4A5C`
+- 米白 `#E9E3D4`
+
+主题采用青绿山水的“石青、石绿、米白、藏蓝”作为主体，朱与明黄只承担错误、警告和强调角色，避免把互不相关的传统色名称拼成一套泛中国风色板。
 
 ## Color Scheme 配色方案
 
 | 角色 | 深色模式 | 浅色模式 |
-|------|----------|----------|
-| **背景 / background** | 墨色 `#1A1A2E` | 宣纸白 `#FBF6EF` |
-| **面板 / backgroundPanel** | `#1E1E2F` | `#F0E8DA` |
-| **元素 / backgroundElement** | `#2A2A3E` | `#E8DCCB` |
-| **主色 / primary** | 鎏金 `#D4A537` | 朱砂 `#C23531` |
-| **副色 / secondary** | 靛青 `#2F4554` | 靛青 `#2F4554` |
-| **强调 / accent** | 翡翠绿 `#5F9EA0` | 翡翠绿 `#5F9EA0` |
-| **正文 / text** | 宣纸 `#E8DCCB` | 墨灰 `#2C2C40` |
-| **syntax keyword** | 黛紫 | 暗紫 `#6B2E7C` |
-| **syntax function** | 鎏金 | 朱砂 |
-| **syntax string** | 青竹 | 青绿 `#3E6B3E` |
-| **syntax number** | 翡翠绿 | 暗青 `#1B7C80` |
+| --- | --- | --- |
+| Background | `#171B24` | `#F6F1E8` |
+| Panel | `#202731` | `#EDE6D9` |
+| Element | `#29333D` | `#E4DDCF` |
+| Primary / 石青 | `#63BBC8` | `#205F73` |
+| Secondary / 紫 | `#AAA2DE` | `#56508A` |
+| Accent / 明黄 | `#F9BA2C` | `#765607` |
+| Success / 石绿 | `#74BC9C` | `#2C684C` |
+| Text / 米白墨色 | `#E9E3D4` | `#35322E` |
 
 ## Install
 
@@ -47,13 +48,14 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencod
   -OutFile "$env:USERPROFILE\.config\opencode\themes\china.json"
 ```
 
-在 `tui.json` 中启用：
+在 OpenCode 中输入 `/theme` 并选择 `china`。
 
-```json
-{ "theme": "china" }
-```
+## Sources
 
-或在 OpenCode 中输入 `/theme` 选择 `china`。
+- [GB/T 31430-2015 中国传统色色名及色度特性](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=6EE6FE2D911C427227830938D027D447)
+- [故宫博物院：朱砂](https://www.dpm.org.cn/lemmas/245199.html)
+- [故宫博物院：王希孟千里江山图卷](https://www.dpm.org.cn/collection/paint/228354.html)
+- [故宫博物院院刊：传统矿物颜料石青色度研究](https://www.dpm.org.cn/journal/255394.html)
 
 ## License
 

@@ -5,9 +5,10 @@
 | 主题 | 风格 |
 | --- | --- |
 | [ubuntu](ubuntu/) | Ubuntu 橙、茄子红、暖灰 |
-| [fedora](fedora/) | Fedora 蓝系 |
-| [2077](2077/) | 赛博朋克霓虹 |
-| [china](china/) | 朱砂红、鎏金、青竹绿 |
+| [fedora](fedora/) | Fedora 蓝与 Four Foundations 官方色 |
+| [2077](2077/) | 军用红、冷青、品牌黄 |
+| [china](china/) | 石青、石绿、明黄、米白 |
+| [claude-code](claude-code/) | Anthropic 陶土橙、暖黑、米白 |
 
 ---
 
@@ -33,6 +34,16 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 mkdir -p ~/.config/opencode/themes
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json \
   -o ~/.config/opencode/themes/china.json
+```
+
+#### Claude Code
+
+基于 Anthropic 官方 Clay、Slate、Ivory 与 Cloud 色板的暖色终端主题。
+
+```bash
+mkdir -p ~/.config/opencode/themes
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/claude-code/claude-code.json \
+  -o ~/.config/opencode/themes/claude-code.json
 ```
 
 #### Fedora
@@ -67,6 +78,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json -o ~/.config/opencode/themes/fedora.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json -o ~/.config/opencode/themes/2077.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json -o ~/.config/opencode/themes/china.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/claude-code/claude-code.json -o ~/.config/opencode/themes/claude-code.json
 ```
 
 Windows PowerShell:
@@ -77,6 +89,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencod
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\fedora.json"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\2077.json"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\china.json"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/claude-code/claude-code.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\claude-code.json"
 ```
 
 **仅当前项目使用：**
@@ -87,11 +100,12 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json -o .opencode/themes/fedora.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json -o .opencode/themes/2077.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json -o .opencode/themes/china.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/claude-code/claude-code.json -o .opencode/themes/claude-code.json
 ```
 
 ### 激活主题
 
-**方式一：** 在 `tui.json` 中设置主题名（`ubuntu`、`fedora`、`2077` 或 `china`）：
+**方式一：** 在 `tui.json` 中设置主题名（`ubuntu`、`fedora`、`2077`、`china` 或 `claude-code`）：
 
 ```json
 { "theme": "ubuntu" }
@@ -108,6 +122,7 @@ rm ~/.config/opencode/themes/ubuntu.json
 rm ~/.config/opencode/themes/fedora.json
 rm ~/.config/opencode/themes/2077.json
 rm ~/.config/opencode/themes/china.json
+rm ~/.config/opencode/themes/claude-code.json
 ```
 
 ---
@@ -134,6 +149,16 @@ Traditional Chinese color palette: Zhu Sha red (朱砂), Liu Jin gold (鎏金), 
 mkdir -p ~/.config/opencode/themes
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json \
   -o ~/.config/opencode/themes/china.json
+```
+
+#### Claude Code
+
+Warm terminal palette based on Anthropic's official Clay, Slate, Ivory, and Cloud swatches.
+
+```bash
+mkdir -p ~/.config/opencode/themes
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/claude-code/claude-code.json \
+  -o ~/.config/opencode/themes/claude-code.json
 ```
 
 #### Fedora
@@ -168,6 +193,7 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json -o ~/.config/opencode/themes/fedora.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json -o ~/.config/opencode/themes/2077.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json -o ~/.config/opencode/themes/china.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/claude-code/claude-code.json -o ~/.config/opencode/themes/claude-code.json
 ```
 
 Windows PowerShell:
@@ -178,6 +204,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencod
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\fedora.json"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\2077.json"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\china.json"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/claude-code/claude-code.json" -OutFile "$env:USERPROFILE\.config\opencode\themes\claude-code.json"
 ```
 
 **Project-only install:**
@@ -188,11 +215,12 @@ curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/m
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/fedora/fedora.json -o .opencode/themes/fedora.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/2077/2077.json -o .opencode/themes/2077.json
 curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/china/china.json -o .opencode/themes/china.json
+curl -fsSL https://raw.githubusercontent.com/handsomezhuzhu/opencode-theme-zzh/main/claude-code/claude-code.json -o .opencode/themes/claude-code.json
 ```
 
 ### Activate the theme
 
-**Option A:** Set the theme name in `tui.json` (`ubuntu`, `fedora`, `2077`, or `china`):
+**Option A:** Set the theme name in `tui.json` (`ubuntu`, `fedora`, `2077`, `china`, or `claude-code`):
 
 ```json
 { "theme": "ubuntu" }
@@ -209,6 +237,7 @@ rm ~/.config/opencode/themes/ubuntu.json
 rm ~/.config/opencode/themes/fedora.json
 rm ~/.config/opencode/themes/2077.json
 rm ~/.config/opencode/themes/china.json
+rm ~/.config/opencode/themes/claude-code.json
 ```
 
 ---
@@ -229,6 +258,9 @@ opencode-theme-zzh/
 ├── china/
 │   ├── china.json
 │   └── README.md
+├── claude-code/
+│   ├── claude-code.json
+│   └── README.md
 ├── README.md
 ├── LICENSE
 └── .gitignore
@@ -240,6 +272,7 @@ opencode-theme-zzh/
 - **Fedora** theme inspired by Fedora website and logo assets.
 - **2077** theme inspired by the visual style of *Cyberpunk 2077*.
 - **China** theme inspired by traditional Chinese painting, porcelain, and classical color names.
+- **Claude Code** theme based on Anthropic's official web brand swatches.
 
 ## License
 
